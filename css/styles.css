@@ -1,0 +1,35 @@
+
+/* recetea todo los margenes */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* llama a la etiqueta body para configurar el estilo fondo y color del texto */
+body{
+    background: rgb(44, 71, 71);
+    color: rgb(255, 255, 255);
+}
+
+/*referencia al id=contenedor para darle estilo a la etiqueta div, 
+  establece un ancho de 960px, margenes automaticos para centrar y 
+  margen superior e inferior de 20 px */
+#contenedor{
+    width: 960px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* */
+header{
+    height: 150px;
+    background: black;
+}
+
+header h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 150px;
+
+}
