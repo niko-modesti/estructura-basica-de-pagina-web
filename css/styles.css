@@ -1,35 +1,141 @@
-
-/* recetea todo los margenes */
+/* el * es el selector universal, lo que significa que estos 
+estilos o atributos se rigen para todo el documento html */
 * {
+    /* recetea todo los margenes a 0 */
     margin: 0px;
     padding: 0px;
 }
 
+
 /* llama a la etiqueta body para configurar el estilo fondo y color del texto */
 body{
+    /* se asigna color de fondo al cuerpo */
     background: rgb(44, 71, 71);
+    /* se asigna color general a todo el texto del documento */
     color: rgb(255, 255, 255);
 }
 
-/*referencia al id=contenedor para darle estilo a la etiqueta div, 
-  establece un ancho de 960px, margenes automaticos para centrar y 
-  margen superior e inferior de 20 px */
-#contenedor{
+
+/*referencia al id=contenedor para darle estilo a la etiqueta div, establece un
+ ancho de 960px, margenes automaticos para centrar y margen superior e inferior de 20 px
+ esto aplica a todo el contenido dentro del div. */
+  #contenedor{
+    /* establece el ancho del div en 960px */
     width: 960px;
+    /* centra el div horizontalmente */
     margin: auto;
+    /* establece un margen superior de 20px */
     margin-top: 20px;
+    /* establece un margen inferior de 20px */
     margin-bottom: 20px;
 }
 
-/* */
+
+/* se llama a la etiqueta semanticamente header para darle estilo */
 header{
+    /*asigna tamaño de altura al header*/
     height: 150px;
+    /*asigna color al header establecido con el tamaño anterior*/
     background: black;
 }
 
-header h1{
-    font-size: 50px;
-    text-align: center;
-    line-height: 150px;
 
+/* se le da propiedades al titulo del header llamando a la etiqueta h1 dentro de header */
+header h1{
+    /*asigna tamaño al texto*/
+    font-size: 50px;
+    /* centra el texto en forma horizontal*/
+    text-align: center;
+    /*centra verticalmente el texto dentro del valor indicado*/
+    line-height: 150px;
 }
+
+
+/* se llama a la etiqueta semanticamente nav para darle estilo */
+nav{
+    /*establece el color de la barra de navegacion*/
+    background:rgb(255, 72, 0) ;
+    /*establece el alto de la barra de navegacion en pixeles */
+    height: 60px;
+}
+
+/* se llama al titulo h2 contenido en la barra de navegacion */
+nav h2{
+    /*asigna tamaño al texto de la barra de navegacion*/
+    font-size: 35px;
+    /* centra el texto en forma horizontal*/
+    text-align: center;
+    /*centra verticalmente el texto dentro del valor indicado*/
+    line-height: 60px;
+}
+
+
+/*llamada al id=contenido para darle esrilo la seccion */
+#contenido{
+    width: 700px;
+    height: 500px;
+    float:left;
+    background: blue;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*se llama a la etiqueta h2 a traves del id=contenido */
+#contenido h2{
+    /*asigna tamaño al texto de la barra de navegacion*/
+    font-size: 40px;
+    /* centra el texto en forma horizontal*/
+    text-align: center;
+    /*centra verticalmente el texto dentro del valor indicado*/
+    line-height: 100px;
+}
+
+
+/* se llama al id=parrafo que se encuentra el la etiqueta <p> */
+#parrafo{
+    /*asigna un tamaño de 30px al texto del parrafo*/
+    font-size: 30px;
+    /* centra el texto en forma horizontal*/
+    text-align: center;
+    /*centra verticalmente el texto dentro del valor indicado*/
+    padding: 35px;
+}
+
+aside{
+    width: 250px;
+    height: 500px;
+    float:right;
+    background: green;
+    margin-top: 10px;
+}
+
+aside h2{
+    /* asigna tamaño al texto del titulo h2 en el aside */
+    font-size: 40px;
+    /* centra el texto en forma horizontal*/
+    text-align: center;
+    /*centra verticalmente el texto dentro del valor indicado*/
+    line-height: 500px;
+}
+
+/* se llama a la etiqueta footer o pie de pagina para dearle estilo */
+footer{
+    /*rompe la propiedad float para que no interfiera con lo anterior */
+    clear: both;
+    background: rgb(1, 2, 94);
+}
+
+footer h2{
+    /* establece un tamaño de 25px para el texto del pie de pagina */
+    font-size: 25px;
+     /* centra el texto en forma horizontal*/
+    text-align: center;
+    /*centra verticalmente el texto dentro del valor indicado*/
+    line-height: 25px;
+    padding: 20px;
+    /* establece el estilo italic o cursiva del texto */
+    font-style: italic;
+}
+ 
+
